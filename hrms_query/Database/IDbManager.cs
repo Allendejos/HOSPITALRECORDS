@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
+namespace hrms_query.Database
+{
+    public interface IDbManager
+    {
+        MySqlConnection GetConnection();
+        bool testConnection();
+    }
+}
